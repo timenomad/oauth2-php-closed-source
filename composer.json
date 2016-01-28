@@ -1,0 +1,7 @@
+{
+    "name": "timenomad/oauth2-php-closed-source",
+    "description": "A server implementation of OAuth 2.0 in PHP.",
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
