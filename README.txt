@@ -1,3 +1,1 @@
-OAuth2 Server now implements draft 20 of OAuth 2.0
-
-The client is still only draft-10.
+This is a fork of https://github.com/quizlet/oauth2-php-closed-source to accomplish composer compatibility. The only difference is the addition of the composer.json file.
