@@ -490,7 +490,7 @@ abstract class OAuth2Client {
 		
 		// We catch HTTP/1.1 4xx or HTTP/1.1 5xx error response.
 		if (strpos($headers[0], 'HTTP/1.1 4') !== FALSE || strpos($headers[0], 'HTTP/1.1 5') !== FALSE) {
-			$result = array('code' => 0, 'message' => '');
+			$result = array('code' => 0, 'message' => '', 'body' => $body);
 			
 			if (preg_match('/^HTTP\/1.1 ([0-9]{3,3}) (.*)$/', $headers[0], $matches)) {
 				$result['code'] = $matches[1];
